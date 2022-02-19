@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 1086548926}
   - component: {fileID: 1086548925}
   - component: {fileID: 1086548924}
+  - component: {fileID: 1086548927}
   m_Layer: 0
   m_Name: charactercontroller
   m_TagString: Untagged
@@ -472,7 +473,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1086548925
@@ -488,8 +489,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 1086548924}
-  turnspeed: 60
+  turnspeed: 20
   movespeed: 10
+  turnfriction: 5
 --- !u!4 &1086548926
 Transform:
   m_ObjectHideFlags: 0
@@ -505,6 +507,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1086548927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086548923}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1309068708
 GameObject:
   m_ObjectHideFlags: 0

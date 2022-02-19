@@ -9,14 +9,15 @@ public class movement : MonoBehaviour
 
     public float turnspeed;
     public float movespeed;
+    float turn;
+    public float turnfriction;
     
     void Update()
     {
-        
-        transform.rotation = transform.rotation * Quaternion.Euler(0f, Input.GetAxis("Horizontal") * turnspeed * Time.deltaTime, 0f);
+        turn = (turn + Input.GetAxis("Horizontal") * turnspeed * Time.deltaTime) * turnfriction;
+        transform.rotation = transform.rotation * Quaternion.Euler(0f, turn, 0f);
         Controller.Move(transform.forward * Input.GetAxis("Vertical") * movespeed * Time.deltaTime);
-        
-
-
+        FindObjectOfType<follow>().Movecamera();
+        Debug.Log(Time.deltaTime);
     }
 }

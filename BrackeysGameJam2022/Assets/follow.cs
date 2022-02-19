@@ -9,7 +9,7 @@ public class follow : MonoBehaviour
     
 
     // Update is called once per frame
-    void Update()
+    public void Movecamera()
     {
         transform.position = Vector3.Lerp(transform.position, camerafollow.position, friction * Time.deltaTime);
         transform.rotation = Quaternion.Slerp(transform.rotation, camerafollow.rotation, friction) * Quaternion.Euler(Time.deltaTime, Time.deltaTime, Time.deltaTime);

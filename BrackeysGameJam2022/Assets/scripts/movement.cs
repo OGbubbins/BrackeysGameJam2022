@@ -27,6 +27,7 @@ public class movement : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //makes an invisible sphere which checks if anything in the ground mask is in it
+        
         //if (isGrounded == true && velocity.y < 0)
         //{
         //    velocity.y = -3f;

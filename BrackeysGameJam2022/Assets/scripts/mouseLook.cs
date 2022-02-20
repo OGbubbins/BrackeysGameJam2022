@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class mouseLook : MonoBehaviour
@@ -10,6 +8,7 @@ public class mouseLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
     }
 
     // Update is called once per frame

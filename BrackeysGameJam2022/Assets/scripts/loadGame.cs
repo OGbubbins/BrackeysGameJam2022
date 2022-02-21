@@ -7,6 +7,6 @@ public class loadGame : MonoBehaviour
 {
     public void loadLevel1()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(1);
     }
 }

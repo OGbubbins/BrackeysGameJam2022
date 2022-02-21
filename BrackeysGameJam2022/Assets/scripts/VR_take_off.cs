@@ -11,42 +11,60 @@ public class VR_take_off : MonoBehaviour
         FindObjectOfType<healthbar>().setmaxhealth(Maxhealth);
         Health = Maxhealth;
 
-        GameObject[] invisibleList = GameObject.FindGameObjectsWithTag("Invisible");
+        GameObject[] RealList = GameObject.FindGameObjectsWithTag("Real");
 
-        foreach (GameObject item in invisibleList)
+        foreach (GameObject item in RealList)
         {
             item.GetComponent<MeshRenderer>().enabled = false;
         }
+
+        GameObject[] FakeList = GameObject.FindGameObjectsWithTag("Fake");
+
+        foreach (GameObject item in FakeList)
+        {
+            item.GetComponent<MeshRenderer>().enabled = true;
+        }
+
 
     }
 
     void Update()
     {
-        GameObject[] invisibleList = GameObject.FindGameObjectsWithTag("Invisible");
-        
+        GameObject[] RealList = GameObject.FindGameObjectsWithTag("Real");
+        GameObject[] FakeList = GameObject.FindGameObjectsWithTag("Fake");
+
         if (Input.GetMouseButton(1) && Health > 0)
         {
             Health -= healthDecreaseSpeed * Time.deltaTime;
-            Debug.Log(Health);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && Health > 0)
         {
-            if (Health > 0)
+            
+            
+            foreach (GameObject item in RealList)
             {
-                foreach (GameObject item in invisibleList)
-                {
-                    item.GetComponent<MeshRenderer>().enabled = true;
-                }
+                item.GetComponent<MeshRenderer>().enabled = true;
             }
+
+            foreach (GameObject item in FakeList)
+            {
+                item.GetComponent<MeshRenderer>().enabled = false;
+            }
+            
             
         }
 
         if (Input.GetMouseButtonUp(1) || Health == 0)
         {
-            foreach (GameObject item in invisibleList)
+            foreach (GameObject item in RealList)
             {
                 item.GetComponent<MeshRenderer>().enabled = false;
+            }
+
+            foreach (GameObject item in FakeList)
+            {
+                item.GetComponent<MeshRenderer>().enabled = true;
             }
         }
 

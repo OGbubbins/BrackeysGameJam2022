@@ -30,7 +30,7 @@ public class movement : MonoBehaviour
         
         if (isGrounded == true && velocity.y < 0)
         {
-            velocity.y = -5;
+            velocity.y = -3;
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)

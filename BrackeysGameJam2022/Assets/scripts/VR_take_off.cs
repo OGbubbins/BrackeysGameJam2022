@@ -8,6 +8,8 @@ public class VR_take_off : MonoBehaviour
 
     void Start()
     {
+        FindObjectOfType<TriggerAnimatiom>().VRonAnimation();
+
         FindObjectOfType<healthbar>().setmaxhealth(Maxhealth);
         Health = Maxhealth;
 

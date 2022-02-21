@@ -11,32 +11,17 @@ public class countdown : MonoBehaviour
     bool levelEnded;
 
     //max times for each level
-    public float startingTimeL1 = 60;
-    public float startingTimeL2 = 60;
-    public float startingTimeL3 = 60;
+    public float startingTime;
 
     //end times for each level
-    public float endTimeL1;
-    public float endTimeL2;
-    public float endTimeL3;
+    public float endTime;
 
     [SerializeField] TMPro.TextMeshProUGUI countdownText;
 
     void Start()
     {
+        currentTime = startingTime;
         
-        if (SceneManager.GetActiveScene().buildIndex == 1)
-        {
-            currentTime = startingTimeL1;
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            currentTime = startingTimeL2;
-        }
-        else if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            currentTime = startingTimeL3;
-        }
     }
     private void Update()
     {

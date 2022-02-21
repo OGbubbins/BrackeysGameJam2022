@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TriggerAnimatiom : MonoBehaviour
 {
-    [SerializeField] private Animator armsanimation;
+    public Animator armsanimation;
 
     public void VRonAnimation()
     {

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class VR_take_off : MonoBehaviour
 {
     float Health;
@@ -55,6 +55,11 @@ public class VR_take_off : MonoBehaviour
         if (Health < 0)
         {
             Health = 0;
+        }
+
+        if (Health == 0)
+        {
+            SceneManager.LoadScene("Game Over");
         }
 
         FindObjectOfType<healthbar>().SetHealth(Health);

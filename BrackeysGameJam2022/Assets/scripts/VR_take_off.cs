@@ -40,8 +40,8 @@ public class VR_take_off : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1) && Health > 0)
         {
-            
-            
+            FindObjectOfType<TriggerAnimatiom>().VRoffAnimation();
+
             foreach (GameObject item in RealList)
             {
                 item.GetComponent<MeshRenderer>().enabled = true;
@@ -57,6 +57,8 @@ public class VR_take_off : MonoBehaviour
 
         if (Input.GetMouseButtonUp(1) || Health == 0)
         {
+            FindObjectOfType<TriggerAnimatiom>().VRonAnimation();
+
             foreach (GameObject item in RealList)
             {
                 item.GetComponent<MeshRenderer>().enabled = false;

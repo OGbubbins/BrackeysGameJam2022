@@ -3029,3 +3029,60 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4312862714341036438, guid: 4979206b4b433c342b78d8742925cc1b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4979206b4b433c342b78d8742925cc1b, type: 3}
+--- !u!1001 &7154612493511710590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663477, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7154612491737663479, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}
+      propertyPath: m_Name
+      value: EndGameTrigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c9f7e9ce482dd14db299a444c150ece, type: 3}

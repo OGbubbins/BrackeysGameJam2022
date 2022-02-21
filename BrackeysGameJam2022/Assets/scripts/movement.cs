@@ -28,10 +28,10 @@ public class movement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask); //makes an invisible sphere which checks if anything in the ground mask is in it
         
-        //if (isGrounded == true && velocity.y < 0)
-        //{
-        //    velocity.y = -3f;
-        //}
+        if (isGrounded == true && velocity.y < 0)
+        {
+            velocity.y = -5;
+        }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

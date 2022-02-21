@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class endLevelTrigger : MonoBehaviour
 {
+    public bool levelEnded = false;
     private void loadNextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -12,5 +13,6 @@ public class endLevelTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         loadNextScene();
+        
     }
 }

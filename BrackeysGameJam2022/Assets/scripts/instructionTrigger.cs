@@ -12,6 +12,6 @@ public class instructionTrigger : MonoBehaviour
         Debug.Log("working");
         instructionText.text = "Right Click to take off your VR headset and reveal the real world, be careful not to use it for too long otherwise you will be poisoned";
 
-        Destroy(instructionText, 5);
+        Destroy(instructionText, 9);
     }
 }

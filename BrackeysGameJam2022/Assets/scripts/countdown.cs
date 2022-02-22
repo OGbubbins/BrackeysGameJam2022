@@ -36,7 +36,7 @@ public class countdown : MonoBehaviour
             endTime = startingTime -= Mathf.Round(currentTime);
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
-                if (endTime < PlayerPrefs.GetFloat("HighScoreLV1", 0))
+                if (endTime < PlayerPrefs.GetFloat("HighScoreLV1", 100))
                 {
                     PlayerPrefs.SetFloat("HighScoreLV1", endTime);
                 }
@@ -45,7 +45,7 @@ public class countdown : MonoBehaviour
 
             else if (SceneManager.GetActiveScene().buildIndex == 2)
             {
-                if (endTime < PlayerPrefs.GetFloat("HighScoreLV2"))
+                if (endTime < PlayerPrefs.GetFloat("HighScoreLV2", 100))
                 {
                     PlayerPrefs.SetFloat("HighScoreLV2", endTime);
                 }
@@ -54,7 +54,7 @@ public class countdown : MonoBehaviour
 
             else if (SceneManager.GetActiveScene().buildIndex == 3)
             {
-                if (endTime < PlayerPrefs.GetFloat("HighScoreLV3"))
+                if (endTime < PlayerPrefs.GetFloat("HighScoreLV3", 100))
                 {
                     PlayerPrefs.SetFloat("HighScoreLV3", endTime);
                 }

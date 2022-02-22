@@ -12,8 +12,8 @@ public class endPageScores : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
-        Level1HS.text = ("Level 1 High Score:" + PlayerPrefs.GetFloat("HighScoreLV1").ToString() + "s");
-        Level2HS.text = ("Level 2 High Score:" + PlayerPrefs.GetFloat("HighScoreLV2").ToString() + "s");
+        Level1HS.text = ("Level 1 High Score:" + PlayerPrefs.GetFloat("HighScoreLV1").ToString() + " s");
+        Level2HS.text = ("Level 2 High Score:" + PlayerPrefs.GetFloat("HighScoreLV2").ToString() + " s");
     }
 
     public void retryLV1()

@@ -12,7 +12,7 @@ public class endLevelTrigger : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        levelEnded = true;
         loadNextScene();
-        
     }
 }

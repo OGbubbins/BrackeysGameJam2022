@@ -4965,6 +4965,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3834170366449876215, guid: 19d6719403aabe24e8f132e9d50530cf, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f6c97022a29a1604ea6b561b98360a44, type: 2}
+    - target: {fileID: 3834170366449876217, guid: 19d6719403aabe24e8f132e9d50530cf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3834170367054775039, guid: 19d6719403aabe24e8f132e9d50530cf, type: 3}
       propertyPath: startingTime
       value: 50
